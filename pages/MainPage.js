@@ -1,6 +1,6 @@
 'use strict';
 
-var BasePage = function(){
+var MainPage = function(){
 
     this.getTextFromBase = function(){
         return $('div.tab-heading').getText();
@@ -11,4 +11,4 @@ var BasePage = function(){
     }
 };
 
-module.exports = BasePage;
+module.exports = MainPage;

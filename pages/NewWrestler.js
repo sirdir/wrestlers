@@ -28,9 +28,7 @@ var NewWrestler = function () {
         $('button.btn-success').click();
     };
 
-    this.photoDisplayed = function () {
-        console.log('beatch');
-        // console.log($('.col-sm-4').isPresent());
+    this.isPhotoBlockPresent = function () {
         return $('.col-sm-4').isPresent();
     }
 };

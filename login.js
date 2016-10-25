@@ -1,14 +1,12 @@
 var loginPage = require('./../wrestlers/pages/LoginJora.js');
-var basePage = require('./../wrestlers/pages/BasePage.js');
-var newWrestler = require('./../wrestlers/pages/NewWrestler.js');
+var mainPage = require('./pages/MainPage.js');
 
-describe('login', function () {
+describe('main', function () {
 
     beforeAll(function () {
         browser.driver.manage().window().maximize();
         login = new loginPage();
-        base = new basePage();
-        newW = new newWrestler();
+        main = new mainPage();
     });
 
     beforeEach(function () {
@@ -24,12 +22,8 @@ describe('login', function () {
         expect(login.getError()).toBe('Incorrect credentials');
     });
 
-    it('positive', function () {
+    it('successful login', function () {
         login.loginAs('auto', 'test');
-        expect(base.getTextFromBase()).toBe('Wrestlers');
-        base.addNewWrestler();
-        newW.setupNewWrestler("sfsaafas", "sdffsdfsd", "11-11-2011", "dfggdfg", "Donetska", "Spartak", "FW", "Cadet", "2015");
-        expect($('.col-sm-4').isPresent()).toBe(true);
-        // expect(newW.photoDisplayed()).toBe(true);
+        expect(main.getTextFromBase()).toBe('Wrestlers');
     });
 });

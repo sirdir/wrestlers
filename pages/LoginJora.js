@@ -2,7 +2,7 @@
 var LoginPage = function () {
 
     this.get = function () {
-        browser.driver.get('http://streamtv.net.ua/base');
+        browser.get('http://streamtv.net.ua/base');
     };
     this.loginAs = function (email, pwd) {
         $('#username>div>input').sendKeys(email);
