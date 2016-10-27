@@ -1,7 +1,7 @@
-var newWrestler = require('./pages/NewWrestler.js');
-var searchPage = require('./pages/SearchPage.js');
-var mainPage = require('./pages/MainPage.js');
-var loginPage = require('./pages/LoginJora.js');
+var newWrestler = require('./../pages/NewWrestler.js');
+var searchPage = require('./../pages/SearchPage.js');
+var mainPage = require('./../pages/MainPage.js');
+var loginPage = require('./../pages/LoginJora.js');
 
 describe('wrestlers: ', function () {
     var id;

@@ -1,5 +1,5 @@
-var loginPage = require('./../wrestlers/pages/LoginJora.js');
-var mainPage = require('./pages/MainPage.js');
+var loginPage = require('./../pages/LoginJora.js');
+var mainPage = require('./../pages/MainPage.js');
 
 describe('main', function () {
 
