@@ -1,29 +1,23 @@
 var newWrestler = require('./../pages/NewWrestler.js');
-var searchPage = require('./../pages/SearchPage.js');
-var mainPage = require('./../pages/MainPage.js');
-var loginPage = require('./../pages/LoginJora.js');
+var searchPage = require('./../pages/SearchBlock.js');
+var loginPage = require('./../pages/LoginPage.js');
 
 describe('wrestlers: ', function () {
     var id;
-    var main;
     var search;
-    var base;
-    var login;
     var newW;
     beforeAll(function () {
         browser.driver.manage().window().maximize();
         newW = new newWrestler();
-        login = new loginPage();
-        main = new mainPage();
         search = new searchPage();
-        base = new mainPage();
     });
     beforeEach(function () {
+        var login = new loginPage();
         login.get();
         login.loginAs('auto', 'test');
     });
     it('create new', function () {
-        main.addNewWrestler();
+        search.addNewWrestler();
         var name = "Timur_"+ new Date().getTime();
         id = name;
         newW.setupNewWrestler(name, "sdffsdfsd", "11-11-2011", "dfggdfg", "Donetska", "Spartak", "FW", "Cadet", "2015");

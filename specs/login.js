@@ -1,12 +1,12 @@
-var loginPage = require('./../pages/LoginJora.js');
-var mainPage = require('./../pages/MainPage.js');
+var loginPage = require('./../pages/LoginPage.js');
+var tabsBlock = require('./../pages/TabsBlock.js');
 
 describe('main', function () {
 
     beforeAll(function () {
         browser.driver.manage().window().maximize();
         login = new loginPage();
-        main = new mainPage();
+        tabs = new tabsBlock();
     });
 
     beforeEach(function () {
@@ -24,6 +24,6 @@ describe('main', function () {
 
     it('successful login', function () {
         login.loginAs('auto', 'test');
-        expect(main.getTextFromBase()).toBe('Wrestlers');
+        expect(tabs.getTextOfHeader()).toBe('Wrestlers');
     });
 });
