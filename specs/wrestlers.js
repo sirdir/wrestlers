@@ -25,8 +25,7 @@ describe('wrestlers: ', function () {
     });
     it('add photo', function () {
         search.search(id);
-        browser.sleep(4000);
-
+        expect(search.getCountOFResults()).toBe(1);
     });
     it('delete existed', function () {
 
