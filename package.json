@@ -1,0 +1,28 @@
+{
+  "name": "wrestlers",
+  "version": "1.0.0",
+  "description": "protractor poc for myself",
+  "main": "conf.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirdir/wrestlers.git"
+  },
+  "keywords": [
+    "protrastor",
+    "selenium",
+    "tests",
+    "angulare app"
+  ],
+  "author": "timur kubay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirdir/wrestlers/issues"
+  },
+  "homepage": "https://github.com/sirdir/wrestlers#readme",
+  "devDependencies": {
+    "protractor": "^4.0.10"
+  }
+}
