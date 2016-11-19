@@ -1,18 +1,16 @@
 'use strict';
 var LoginPage = function () {
 
-    this.get = function () {
+    this.get = () => {
         browser.get('http://streamtv.net.ua/base');
     };
-    this.loginAs = function (email, pwd) {
+    this.loginAs = (email, pwd) => {
         $('#username>div>input').sendKeys(email);
         $('[value="user.password"]>div>input').sendKeys(pwd);
         element(by.buttonText('Login')).click();
     };
 
-    this.getError = function () {
-        return $('div.panel-heading').getText();
-    };
+    this.getError = () => $('div.panel-heading').getText();
 
 };
 
