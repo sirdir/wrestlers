@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sirdir/wrestlers#readme",
   "devDependencies": {
-    "protractor": "^4.0.10",
-    "shelljs": "^0.7.5"
+    "protractor": "^5.1.1",
+    "shelljs": "^0.7.7"
   }
 }
