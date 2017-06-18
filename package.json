@@ -24,7 +24,7 @@
   "homepage": "https://github.com/sirdir/wrestlers#readme",
   "devDependencies": {
     "protractor": "^5.1.2",
-    "protractor-jasmine2-html-reporter": "^0.0.7",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.5",
     "shelljs": "^0.7.7"
   }
 }
